@@ -1,0 +1,26 @@
+name: BikeRacer
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "15.0"
+
+targets:
+  BikeRacer:
+    type: application
+    platform: iOS
+    sources:
+      - BikeRacer
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.bikeracer
+        CODE_SIGNING_ALLOWED: NO
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: BikeRacer
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        SWIFT_VERSION: "5.0"
+
+schemes:
+  BikeRacer:
+    build:
+      targets:
+        BikeRacer: all
